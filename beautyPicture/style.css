@@ -1,0 +1,46 @@
+.imagePicker{
+    height:200px;
+    width:200px;
+    margin:0 auto;
+    position: relative;
+    cursor: pointer;
+}
+.imagePicker input{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    outline:none;
+    opacity: 0;
+    z-index:3;
+    cursor: pointer;
+}
+.imagePicker img{
+    max-height:100%;
+    max-width: 100%;
+    vertical-align: top;
+    border-radius: 50%;
+    z-index: 0;
+}
+.imagePicker:hover .edit{
+    display:block;
+}
+
+.imagePicker .edit{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    color:white;
+    text-align: center;
+    line-height:200px;
+    display:none;
+    z-index:1;
+    
+}
