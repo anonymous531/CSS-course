@@ -1,0 +1,82 @@
+*{padding:0;margin:0;}
+*{box-sizing:border-box;}
+*::before,*::after{box-sizing:border-box;}
+ul{list-style:none;border:1px solid #b8b8b8;display:none}
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wrapper{
+  
+}
+.inputWrapper{
+  height:40px;
+  float:left;
+  display:inline-block;
+  position:relative;
+  line-height:40px;
+}
+.inputWrapper input[type=text]{
+  height:40px;
+  width:536px;
+  padding-left:8px;
+  padding-right:74px;
+  font-size:16px;
+  outline:none;
+  border:1px solid #b8b8b8;
+}
+.inputWrapper input[type=text]:hover{
+  border-color:rgb(153,153,153);
+}
+.inputWrapper input[type=text]:focus{
+  outline:none;
+  border-color:#4b94fc;
+}
+.inputWrapper .floatDiv{
+  position:absolute;
+  top:0;
+  right:0;
+  padding-right:8px;
+}
+.inputWrapper .icon{
+  width:20px;
+  height:20px;
+  fill:#b8b8b8;
+}
+.inputWrapper .icon:hover{
+  cursor:pointer;
+  fill:#4b94fc ;
+}
+
+.inputWrapper .splitLine{
+  width:1px;
+  height:17px;
+  border-left:1px solid #b8b8b8;
+  padding:0 6px;
+  margin-left:8px;
+}
+.inputWrapper + button{
+  height:40px;
+  outline:none;
+  border:none;
+  background-color: rgb(51,132,255);
+  color:white;
+  font-size:16px;
+  padding:0 20px;
+}
+.inputWrapper + button:hover{
+  cursor:pointer;
+  box-shadow:1px 1px 1px 0 rgba(0,0,0,0.2);
+  background: #3781F0;
+}
+.suggestion.active{
+    display:block;
+  }

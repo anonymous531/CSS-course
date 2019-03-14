@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        1、利用浮动float
+        让左边子元素向左浮动float: left;让右边的子元素向右浮动float: right;
+        位于中间的子元素可以通过设置margin值找到其中心的位置，仍然要给所有浮动的子元素的父元素加上类clearfix。
+
+        2、利用绝对定位
+        将要并排的子元素进行绝对定位，如果子元素是块级元素，记得给子元素设置为：display: inline-block;还要注意给其父元素加上相对定位。处于中间的那个元素注意根据父元素的宽度设置它的left值。
+
+        三、水平居中
+        1、margin: 0 auto;
+        对子框设置display:inline-block;对父框设置margin:0 auto;
+
+        2、text-align: center;
+        对子框设置display:inline-block;对父框设置text-align:center;。
+
+        3、absolute + transform
+        对父框设置position:relative;对子框设置position:absolute;left:50%; transform : translateX(-50%);
+    </div>
+</body>
+</html>
